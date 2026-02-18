@@ -3,7 +3,8 @@ body {
   color: #cbd5e1;
   background-color: #000000;
 }
-header{
+
+header {
   width: 250px;
   height: 90vh;
   position: fixed;
@@ -16,43 +17,45 @@ header{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  font-family: "nunito"sans-serif;
+  font-family: "Nunito", sans-serif;
 }
+
+nav {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+}
+
 nav ul {
   list-style: none;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
   width: 100%;
-  margin-right: 50px;
 }
 
 nav ul li a {
   display: flex;
+  align-items: center;
+  gap: 10px;
   text-decoration: none;
   color: #cbd5e1;
   font-size: 16px;
   transition: all 0.3s ease;
   border-radius: 8px;
-  display: flex;
-  align-items: center;
-  gap: 10px;          
-  padding: 15px; 
-}
-
-nav ul li a i {
-  font-size: 18px;
+  padding: 15px;
+  justify-content: flex-start;
 }
 
 nav ul li a:hover {
   background: #1f2937;
   color: #ffffff;
   border-left: 4px solid gray;
-  padding-left: 21px;
 }
 
-nav ul li a.active{
+nav ul li a.active {
   background: #1f2937;
   color: #ffffff;
   border-left: 4px solid grey;
@@ -64,10 +67,10 @@ nav ul li a.active{
   left: 0;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 15px;
+  padding-left: 15px;
 }
-
 
 .social-media {
   width: 35px;
@@ -85,27 +88,30 @@ nav ul li a.active{
 .social-media:hover {
   background: #00bcd4;
   color: #ffffff;
-  transform: scale1.1;
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
-  nav {
+  header {
     width: 80px;
   }
 
   nav ul li a span {
     display: none;
+    margin-left: 20px;
   }
 
   nav ul li a {
     justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
 
   .container-social-media {
-    width: 80px;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
   }
 }
-
-
