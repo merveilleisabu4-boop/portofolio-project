@@ -89,7 +89,7 @@ nav ul li a.active {
 .social-media:hover {
   background: #00bcd4;
   color: #ffffff;
-  transform: scale(1.1);
+  
 }
 
 @media (max-width: 768px) {
