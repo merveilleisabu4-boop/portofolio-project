@@ -211,7 +211,7 @@ nav ul li a.active {
   border: 3px solid color-mix(in srgb, #ffffff, transparent 90%);
   border-radius: 20px;       
   z-index: 1;
-  background: color-mix(in srgb, #ffffff, transparent 90%);    
+  background-color: color-mix(in srgb, #ffffff, transparent 90%);    
   transform: translate(12px, 12px); 
   border: none;
 }
