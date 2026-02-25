@@ -100,7 +100,8 @@ nav ul li a.active {
   align-items: center;
   font-family: "Roboto", sans-serif;
   position: relative;
-  top: 0; /* suppression du décalage */
+  top: 0; 
+  margin-bottom: 30px;
 }
 
 .cercle {
@@ -129,7 +130,7 @@ nav ul li a.active {
   flex: 1;
   max-width: 50%;
   margin-top: 20px;
-  margin-bottom: 0; /* suppression du grand espace */
+  margin-bottom: 0; 
 }
 
 .hero-text h1 span {
