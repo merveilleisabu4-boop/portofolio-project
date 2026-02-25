@@ -488,7 +488,7 @@ nav ul li a.active {
   background-color: #444444;        
   border-radius: 30px;
   height: 30%;
-  width: 110%;   
+  width: 100%;   
 }
 
 .icon-circle.grey { 
