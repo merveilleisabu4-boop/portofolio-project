@@ -88,26 +88,26 @@ nav ul li a.active {
   background: #1F1F1F;
   color: white;
 
+}main {
+  margin-left: 300px;
+  padding: 0;
+  margin-bottom: 0;
 }
 
-main {
-  margin-left: 300px;
-  padding: 0px;
-  margin-bottom: 0px;
-}
 .hero-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   position: relative;
-  top: -62px;
+  top: 0; /* suppression du décalage */
 }
+
 .cercle {
   position: absolute;
-  background: color-mix(in srgb,#ffffff,transparent 90%);
+  background: rgba(255, 255, 255, 0.1); 
   border-radius: 50%;
-  top: 210px;  
+  top: 210px;
   left: 20px;
   width: 20%;
   height: 20%;
@@ -124,53 +124,54 @@ main {
   margin-top: 40px;
   position: relative;
 }
+
 .hero-text {
   flex: 1;
   max-width: 50%;
   margin-top: 20px;
-  margin-bottom: 20%;
+  margin-bottom: 0; /* suppression du grand espace */
 }
+
 .hero-text h1 span {
   color: white;
-  font-size: 1.2;
+  font-size: 1.2rem;
 }
+
 .hero-text h2 {
-  color: white;          
-  font-weight: 300;         
-  margin: 10px 0 20px 0;   
-  line-height: 1.2;        
+  color: white;
+  font-weight: 300;
+  margin: 10px 0 20px 0;
+  line-height: 1.2;
 }
+
 .hero-text p {
   max-width: 500px;
+  color: #e0e0e0;
 }
+
 .btn-group {
   margin-top: 20px;
   display: flex;
   gap: 15px;
 }
+
 .btn {
   padding: 12px 25px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   text-align: center;
-  width: 35%;
-  height: 50%;
   font-size: 12px;
-  font-family: "Roboto",sans-serif;
-  background-color: #1b1b1b;
-  color: #ffffff;
+  font-family: "Roboto", sans-serif;
   border: 2px solid;
+  transition: all 0.3s ease;
 }
+
 .view-btn {
-  background: #ffff;
+  background: #ffffff;
   color: #1b1b1b;
 }
-.underline {
-  text-decoration: underline;
-  white-space: nowrap;
-  display: inline;
-}
+
 .view-btn:hover {
   background: #e2e8f0;
 }
@@ -190,56 +191,55 @@ main {
   gap: 15px;
   margin-top: 25px;
 }
+
 .profile {
   position: relative;
   width: 300px;
   height: 350px;
   margin-right: 30px;
   margin-top: 5%;
-  margin-bottom: 80%;
-  
+  margin-bottom: 0; 
 }
+
 .profile img {
   width: 100%;
   height: 95%;
-  display: flex;
+  display: block;
   position: relative;
   z-index: 3;
   border-radius: 20px;
-  align-items: center; 
 }
 
 .hero-border {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;  
-  height: 100% ;  
-  border: 3px solid color-mix(in srgb, #ffffff, transparent 90%);
-  border-radius: 20px;       
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
   z-index: 1;
-  background-color: color-mix(in srgb, #ffffff, transparent 90%);    
-  transform: translate(12px, 12px); 
-  border: none;
+  background-color: rgba(255, 255, 255, 0.1); 
+  transform: translate(12px, 12px);
 }
+
 .hero-cercle {
   position: absolute;
-  top: -30px;       
-  left: 10px;        
-  width: 120px;      
+  top: -30px;
+  left: 10px;
+  width: 120px;
   height: 120px;
-  background-color: color-mix(in srgb,#ffffff,transparent 90%);
-  border-radius: 50%; 
+  background-color: rgba(255, 255, 255, 0.1); 
+  border-radius: 50%;
   z-index: 0;
 }
+
 .about-section {
   width: 95%;
-  height: 30px;
+  height: auto;
   margin-bottom: 50px;
   margin-right: 10px;
   position: relative;
-  padding: 0px;
-  
+  padding: 0;
 }
 
 .about-container {
@@ -247,13 +247,11 @@ main {
   justify-content: space-between;
   align-items: stretch;
   gap: 10px;
-  
 }
-
 
 .about-card {
   background: linear-gradient(145deg, #1a1a1a, #222);
-  padding: 0px;
+  padding: 0;
   border-radius: 30px;
   width: 350px;
   text-align: center;
@@ -279,7 +277,7 @@ main {
   color: #aaa;
   margin-bottom: 30px;
   display: flex;
-  gap: 10px
+  gap: 10px;
 }
 
 .info-item {
@@ -291,7 +289,6 @@ main {
   font-size: 14px;
   color: white;
   border-radius: 20px;
-  
 }
 
 .about-content {
@@ -322,7 +319,8 @@ main {
   line-height: 1.7;
   margin-bottom: 15px;
 }
-.icon-btn{
+
+.icon-btn {
   position: absolute;
   width: 2%;
   height: 15px;
@@ -331,7 +329,6 @@ main {
   background: white;
   padding: 10px;
   border-radius: 55%;
-  background-color: #ffffff;
   color: #444444;
   margin: 13px;
   margin-left: 190px;
@@ -381,7 +378,6 @@ main {
   color: #ffffff;
 }
 
-
 .value.senior {
   font-size: 11px;
   padding: 2px 8px;
@@ -390,47 +386,49 @@ main {
   width: fit-content;
 }
 
-
 .tags {
   display: flex;
   gap: 5px;
   flex-wrap: wrap;
 }
 
- .tags span {
+.tags span {
   font-size: 10px;
   padding: 3px 8px;
   background: #444444;
   border-radius: 10px;
 }
- .profile-card{
+
+.profile-card {
   display: flex;
   padding: 1rem;
   height: 120px;
   width: 92%;
   gap: 10px;
-  margin-bottom: 95px;
+  margin-bottom: 40px; 
 }
 
-.info-group{
+.info-group {
   width: 50%;
   height: 120px;
 }
-.info h1{
+
+.info h1 {
   font-size: 14px;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
-  margin: 0px 0px 8px;
+  margin: 0 0 8px;
   color: #ececec;
-  
 }
-.info span{
+
+.info span {
   display: flex;
   font-weight: 600;
   color: #ffffff;
-  font-family: "Roboto",sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
+
 .section-btn {
   display: flex;
   gap: 15px;              
@@ -470,7 +468,6 @@ main {
   background-color: #444444;
   color: white;
 }
-
 
 .stats-container {
   display: flex;
@@ -535,7 +532,6 @@ main {
   justify-content: center;
   font-size: 35px;
 }
-
 
 .stat-card h2 {
   font-size: 48px;
