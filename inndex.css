@@ -94,65 +94,66 @@ nav ul li a.active {
   padding: 0;
   margin-bottom: 0;
 }
-
 .hero-section {
   min-height: 100vh;
   display: flex;
   align-items: center;
   font-family: "Roboto", sans-serif;
   position: relative;
-  top: 0; 
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  margin-left: 20px;
 }
 
 .cercle {
   position: absolute;
-  background: rgba(255, 255, 255, 0.1); 
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   top: 200px;
   left: 20px;
-  width: 30%;
+  width: 20%;
   height: 30%;
   z-index: -1;
   opacity: 0.6;
 }
-
 .hero {
   display: flex;
-  align-items: flex-start;
-  padding-top: 60px;
+  align-items: center; 
   justify-content: space-between;
   gap: 60px;
-  margin-top: 40px;
+  padding-top: 20px; 
+  margin-top: 0;
   position: relative;
 }
 
 .hero-text {
   flex: 1;
   max-width: 50%;
-  margin-top: 20px;
-  margin-bottom: 0;
-  margin-left: 20px; 
-   
+  margin-left: 20px;
+  color: #ffffff;
+}
 
+.hero-text h1 {
+  font-size: 3rem; 
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .hero-text h1 span {
-  color: white;
-  font-size: 1.2rem;
+  display: inline;
 }
 
 .hero-text h2 {
-  color: white;
+  font-size: 1.5rem; 
   font-weight: 300;
   margin: 10px 0 20px 0;
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .hero-text p {
-  max-width: 500px;
+  font-size: 1rem;
   color: #e0e0e0;
-  margin-left: 20px;
+  max-width: 500px;
+  line-height: 1.6;
 }
 
 .btn-group {
@@ -238,14 +239,13 @@ nav ul li a.active {
   border-radius: 50%;
   z-index: 0;
 }
-
 .about-section {
   width: 95%;
   height: auto;
-  margin-bottom: 50px;
-  margin-right: 10px;
+  margin: 0 10px 50px 20px;
   position: relative;
   padding: 0;
+  font-family: "Roboto", sans-serif;
   margin-left: 20px;
 }
 
@@ -256,48 +256,85 @@ nav ul li a.active {
   gap: 50px;
 }
 
+
 .about-card {
   background: linear-gradient(145deg, #1a1a1a, #222);
-  padding: 0;
   border-radius: 30px;
   width: 350px;
   text-align: center;
   border-top: 4px solid white;
   display: flex;
   flex-direction: column;
+  padding: 30px 20px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  margin: 0 auto 20px auto;
+  position: relative;
 }
 
 .profile-img img {
-  width: 180px;
-  height: 180px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   border: 6px solid white;
-  margin: 0 auto 20px auto;
   object-fit: cover;
+  display: block;
 }
 
-.about-card h2 {
-  margin: 10px 0 5px;
-  margin-left: 20px;
+.name-icon {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+  gap: 10px; 
+  margin-bottom: 20px;
+}
+
+.name-icon h2 {
+  font-size: 1.5rem; 
+  font-weight: 600;
+  margin: 0;
+}
+
+.icon-btn {
+  position:relative;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #444444;
+  margin-left: 90px;
+  margin-bottom: 90px;
 }
 
 .job {
   color: #aaa;
+  font-size: 0.95rem;
   margin-bottom: 30px;
   display: flex;
+  justify-content: center;
   gap: 10px;
-  margin-left: 20px;
 }
+
 
 .info-item {
   background: #1c1c1c;
   padding: 20px;
-  width: 80%;
-  height: 80px;
-  margin-bottom: 10px;
-  font-size: 14px;
+  width: 100%; 
+  height: 50px;
+  margin: 10px auto;
+  font-size: 0.9rem;
   color: white;
   border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .about-content {
@@ -311,36 +348,33 @@ nav ul li a.active {
   background-color: white;
   padding: 8px 18px;
   border-radius: 20px;
-  font-size: 14px;
+  font-size: 0.85rem;
   display: inline-block;
   margin-bottom: 20px;
   color: #0f172a;
-  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 .about-content h1 {
-  font-size: 42px;
+  font-size: 2.5rem; 
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
 .about-content p {
+  font-size: 1rem; 
   color: #bbb;
   line-height: 1.7;
   margin-bottom: 15px;
 }
-
-.icon-btn {
-  position: absolute;
-  width: 2%;
-  height: 15px;
-  top: 100px;
-  margin-right: 100px;
-  background: white;
-  padding: 10px;
-  border-radius: 55%;
-  color: #444444;
-  margin: 13px;
-  margin-left: 190px;
+.passion-text {
+  font-family: 'Arial', sans-serif;
+  font-size: 0.9rem; 
+  font-weight: 400;
+  color: #bbb;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-align: center;
 }
 
 .stats {
@@ -354,43 +388,45 @@ nav ul li a.active {
 }
 
 .profile-card {
-  display: flex;          
-  gap: 20px;              
+  display: flex;
+  gap: 30px;
   padding: 20px;
   width: 92%;
   background: #1a1a1a;
   border-radius: 15px;
   margin-top: 30px;
-  gap: 30px;
 }
 
 .info-group {
-  flex: 1;               
+  flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
+  justify-content: center;
 }
 
 .info h1 {
-  font-size: 14px;
+  font-size: 0.9rem; 
   font-weight: 600;
   margin-bottom: 5px;
   color: #ececec;
-  display: block;
 }
 
+
 .info p {
-  margin-bottom: 15px;   
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+  color: #bbb;
 }
 
 .value {
   font-weight: 600;
+  font-size: 1rem; 
   color: #ffffff;
 }
 
 .value.senior {
-  font-size: 11px;
-  padding: 2px 8px;
+  font-size: 0.75rem;
+  padding: 4px 10px;
   border-radius: 12px;
   background: #444444;
   width: fit-content;
@@ -398,15 +434,16 @@ nav ul li a.active {
 
 .tags {
   display: flex;
-  gap: 5px;
+  gap: 8px;
   flex-wrap: wrap;
 }
 
 .tags span {
-  font-size: 10px;
-  padding: 3px 8px;
+  font-size: 0.7rem; 
+  padding: 4px 10px;
   background: #444444;
   border-radius: 10px;
+  color: #fff;
 }
 
 .profile-card {
