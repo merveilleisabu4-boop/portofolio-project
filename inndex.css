@@ -259,11 +259,13 @@ nav ul li a.active {
   justify-content: space-between;
   align-items: stretch;
   gap: 50px;
+  justify-content: center;
+  gap: 30px;
 }
 
 .about-card {
   width: 250px;    
-  height: auto;    
+  height: 250px;    
   padding: 20px 20px;
   background: linear-gradient(145deg, #1a1a1a, #222);
   border-radius: 30px;
@@ -271,7 +273,7 @@ nav ul li a.active {
   border-top: 4px solid white;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  margin-left: -5px;
 }
 .profile-img {
   width: 140px;
