@@ -101,7 +101,7 @@ nav ul li a.active {
   font-family: "Roboto", sans-serif;
   position: relative;
   margin-bottom: 40px;
-  margin-left: 20px;
+  margin-left: 40px;
 }
 
 .cercle {
@@ -251,7 +251,7 @@ nav ul li a.active {
   position: relative;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .about-container {
@@ -261,23 +261,24 @@ nav ul li a.active {
   gap: 50px;
 }
 
-
 .about-card {
   background: linear-gradient(145deg, #1a1a1a, #222);
   border-radius: 30px;
-  width: 350px;
+  width: 800px;     
+  min-height: 600px; 
   text-align: center;
   border-top: 4px solid white;
   display: flex;
   flex-direction: column;
-  padding: 30px 20px;
+  padding: 40px 30px; 
+  margin-left: 30px;
 }
 
 .profile-img {
-  width: 180px;
-  height: 180px;
+  width: 140px;
+  height: 140px;
   margin: 0 auto 20px auto;
-  position: relative;
+  position: relative; 
 }
 
 .profile-img img {
@@ -285,8 +286,6 @@ nav ul li a.active {
   height: 100%;
   border-radius: 50%;
   border: 6px solid white;
-  object-fit: cover;
-  display: block;
 }
 
 .name-icon {
@@ -304,18 +303,18 @@ nav ul li a.active {
 }
 
 .icon-btn {
-  position:relative;
-  width: 30px;
-  height: 30px;
+  position: absolute;   
+  bottom: 15px;          
+  right: 5px;           
+  width: 28px;
+  height: 28px;
   background: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 12px;
   color: #444444;
-  margin-left: 90px;
-  margin-bottom: 90px;
 }
 
 .job {
@@ -327,6 +326,10 @@ nav ul li a.active {
   gap: 10px;
 }
 
+.job p {
+  margin-bottom: 20px;
+  display: inline;
+}
 
 .info-item {
   background: #1c1c1c;
@@ -340,13 +343,14 @@ nav ul li a.active {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .about-content {
-  flex: 1;
-  padding: 40px;
   border-radius: 30px;
   background: #1a1a1a;
+  flex: 0.6;     
+  padding: 30px;    
 }
 
 .tag {
@@ -372,6 +376,7 @@ nav ul li a.active {
   line-height: 1.7;
   margin-bottom: 15px;
 }
+
 .passion-text {
   font-family: 'Arial', sans-serif;
   font-size: 0.9rem; 
@@ -416,7 +421,6 @@ nav ul li a.active {
   color: #ececec;
 }
 
-
 .info p {
   font-size: 0.9rem;
   margin-bottom: 15px;
@@ -449,36 +453,6 @@ nav ul li a.active {
   background: #444444;
   border-radius: 10px;
   color: #fff;
-}
-
-.profile-card {
-  display: flex;
-  padding: 1rem;
-  height: 120px;
-  width: 92%;
-  gap: 10px;
-  margin-bottom: 40px; 
-}
-
-.info-group {
-  width: 50%;
-  height: 120px;
-}
-
-.info h1 {
-  font-size: 14px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  margin: 0 0 8px;
-  color: #ececec;
-}
-
-.info span {
-  display: flex;
-  font-weight: 600;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
 }
 
 .section-btn {
@@ -529,27 +503,28 @@ nav ul li a.active {
   background-color: #444444;        
   border-radius: 30px;
   height: 300px;
-  width: 110%;   
-  margin-right: 80px;
+  width: 100%;       
   margin-top: 10%;
-  position: absolute;
+  position: relative;
 }
 
 .icon-circle.grey { 
   background-color: #444444; 
 }
+
 .icon-circle.orange { 
   background-color:  color-mix(in srgb, #ff7e00, transparent 85%);
   color:  #ff7e00; 
 }
+
 .icon-circle.green { 
   background-color:   color-mix(in srgb, #00c875, transparent 85%);
   color: #00c875;  
 }
+
 .icon-circle.pink { 
   color: #e83e8c; 
   background-color:  color-mix(in srgb, #e83e8c, transparent 85%);
-
 }
 
 .stat-card {
@@ -559,7 +534,6 @@ nav ul li a.active {
   text-align: center;
   padding-top: 40px;
   background: #2c2c2c;
-  padding: auto;
 }
 
 .icon-circle {
@@ -577,6 +551,7 @@ nav ul li a.active {
   font-size: 48px;
   margin: 10px 0;
   font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .stat-card p {
