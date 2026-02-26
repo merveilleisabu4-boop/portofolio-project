@@ -517,13 +517,14 @@ nav ul li a.active {
   text-align: center;
   padding-top: 40px;
   background: #2c2c2c;
+  padding: auto;
 }
 
 .icon-circle {
   width: 90px;
   height: 90px;
   border-radius: 50%;
-  margin: 0 auto 25px;
+  margin: auto ;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -537,6 +538,6 @@ nav ul li a.active {
 }
 
 .stat-card p {
-  font-size: 18px;
+  font-size: 14px;
   color: #cccccc; 
 }
