@@ -262,18 +262,17 @@ nav ul li a.active {
 }
 
 .about-card {
+  width: 250px;    
+  height: auto;    
+  padding: 20px 20px;
   background: linear-gradient(145deg, #1a1a1a, #222);
   border-radius: 30px;
-  width: 800px;     
-  min-height: 600px; 
   text-align: center;
   border-top: 4px solid white;
   display: flex;
   flex-direction: column;
-  padding: 40px 30px; 
-  margin-left: 30px;
+  margin-left: 20px;
 }
-
 .profile-img {
   width: 140px;
   height: 140px;
@@ -457,21 +456,25 @@ nav ul li a.active {
 
 .section-btn {
   display: flex;
-  gap: 15px;              
-  margin-top: 25px;
+  justify-content: space-between;  
+  gap: 5px;                          
+  width: 100%;                       
+  margin-top: 10px;                  
 }
 
 .section-btn button {
   display: flex;
-  align-items: center;
-  gap: 8px;               
-  padding: 10px 20px;
+  align-items: center ;
+  gap: 8px ;               
+  padding: 12px 30px;              
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.3s ease;
   border: none;
+  flex-grow: 1;                                
+  text-align: center;               
 }
 
 .btn-i {
