@@ -1308,3 +1308,31 @@ button:hover {
   background: white;
   color: #111;
 }
+
+.footer {
+  background-color: #111;
+  border-top: 2px solid #444;
+  color: #ffffff; 
+  text-align: center; 
+  padding: 80px 0 50px; 
+  padding-left: 140px;  
+  font-family: Arial, sans-serif;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.footer .brand {
+  font-weight: 600;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
